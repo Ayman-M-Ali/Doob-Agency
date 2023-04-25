@@ -4,4 +4,4 @@
 #### HTML5
 #### CSS3
 #### JS
-And I want to develop this page with more JS and other technologies.
+And I work everyday to develop this page with more JS and other technologies.
