@@ -1,0 +1,68 @@
+@import "./mixins";
+#about-us {
+  position: relative;
+  padding: 50px 0;
+}
+#about-us .line-one {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 100px;
+}
+.line-one .skills {
+  display: flex;
+  gap: 40px;
+}
+.line-one > div:first-child p,
+#portfolio .container p,
+#blog .container:first-child > p,
+#contact p {
+  @include font($font-size: 40px, $font-weight: 600, $line-height: 1.4, $letter-spacing: normal);
+  color: var(--mainText);
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+.line-one div div:nth-child(1) h2,
+.line-one div div:nth-child(2) h2 {
+  font-weight: 600;
+}
+.skills div {
+  padding: 40px;
+  color: var(--mainText);
+  line-height: 1.6;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+#about-us .aside {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+.line-two {
+  display: flex;
+  gap: 40px;
+}
+.line-two img {
+  width: 100%;
+  height: auto;
+}
+.our-company {
+  max-width: 50%;
+}
+.our-company p:nth-child(2) {
+  @include font($font-size: 40px, $font-weight: 600, $line-height: 1.4, $letter-spacing: normal);
+  color: var(--mainText);
+  margin: 20px 0;
+}
+.our-company p:last-of-type {
+  color: var(--mainText);
+  line-height: 2;
+  letter-spacing: 1.6px;
+}
+#about-us .aside2 {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  z-index: -1;
+}
+
+

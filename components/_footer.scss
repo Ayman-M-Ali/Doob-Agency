@@ -1,0 +1,38 @@
+@import "./mixins";
+footer {
+  background: var(--mainText);
+  color: white;
+  text-align: center;
+  padding: 60px 0;
+}
+footer h2 {
+  color: var(--mainColor);
+  @include font($font-size: 48px, $font-weight: 600, $line-height: 1, $letter-spacing: normal);
+  margin: 10px 0;
+}
+footer ul {
+  @include flex-between($justify-content: space-between, $align-items: center);
+  width: fit-content;
+  margin: 24px auto 48px;
+}
+footer li a {
+  padding: 0 32px;
+  @include font($font-size: 18px, $font-weight: 600, $line-height: 2, $letter-spacing: normal);
+  color: white;
+}
+footer li a:hover,
+footer ul:last-child a:hover {
+  color: var(--mainColor);
+}
+footer p {
+  @include font($font-size: 14px, $font-weight: 400, $line-height: 2, $letter-spacing: 1.2px);
+}
+footer ul:last-child {
+  margin: 30px auto 0;
+}
+footer ul:last-child a {
+  font-size: 40px;
+  color: white;
+}
+
+

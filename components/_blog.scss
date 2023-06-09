@@ -1,0 +1,81 @@
+@import "./mixins";
+#blog {
+  position: relative;
+  padding: 50px 0;
+  overflow-x: clip;
+}
+#blog .container .stories-slides {
+  position: relative;
+}
+#blog .container:first-child > p {
+  margin-top: 10px;
+}
+.arrows {
+  width: 72px;
+  height: 20px;
+  margin: 40px 0;
+  margin-left: auto;
+  place-content: flex-end;
+  @include flex-between($justify-content: space-between, $align-items: center);
+}
+.arr-right,
+.arr-left {
+  font-size: 28px;
+  color: #aaa;
+  cursor: pointer;
+}
+.arr-right:hover,
+.arr-left:hover {
+  color: var(--mainText);
+}
+#blog .stories-shows {
+  display: flex;
+  gap: 24px;
+  transition: transform 0.5s ease-in-out;
+  transform: translateX(0);
+}
+#blog .container .stories-hidden {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  transition: transform 0.5s ease-in-out;
+  transform: translateX(250%);
+  display: flex;
+  gap: 24px;
+}
+#blog .stories-shows div,
+#blog .stories-hidden div {
+  width: 100%;
+  padding: 30px 25px 40px;
+  background: white;
+  color: var(--mainText);
+  line-height: 2;
+  letter-spacing: 1.5px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+.story-active {
+  background-color: var(--mainColor) !important;
+}
+.story-active h4,
+.story-active p {
+  color: White !important;
+}
+.stories-shows div p:nth-child(2),
+.stories-hidden div p:nth-child(2) {
+  font-size: 14px;
+  color: #777;
+}
+.stories-shows p:nth-child(n + 2),
+.stories-hidden p:last-child {
+  color: var(--mainText);
+  line-height: 2;
+  font-size: 18px;
+}
+.aside4 {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  z-index: -1;
+}
+
+

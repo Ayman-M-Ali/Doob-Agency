@@ -1,0 +1,12 @@
+@mixin flex-between($justify-content: space-between, $align-items: center) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
+
+@mixin font($font-size: 0, $font-weight: 0, $line-height: unset, $letter-spacing: normal) {
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+}

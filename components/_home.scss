@@ -1,0 +1,54 @@
+@import "./mixins";
+#home {
+  display: flex;
+  margin: 0 0 50px;
+}
+#home img {
+  position: absolute;
+  right: 0;
+  top: 30px;
+  width: 50%;
+  z-index: -1;
+}
+.home {
+  width: 50%;
+  margin: 100px 0;
+}
+.home h1 {
+  @include font($font-size: 72px, $font-weight: 600, $line-height: unset, $letter-spacing: normal);
+  color: var(--mainText);
+}
+.home p {
+  color: #777;
+  margin: 40px 0 60px;
+}
+.home a:first-of-type,
+.line-one a,
+#contact button {
+  @include font($font-size: 16px, $font-weight: 600, $line-height: unset, $letter-spacing: normal);
+  padding: 15px 30px;
+  background-color: var(--mainColor);
+  color: white;
+  border-radius: 30px;
+  outline: none;
+  border: 1px solid var(--mainColor);
+  margin-right: 40px;
+}
+.home a:first-of-type:hover,
+.line-one a:hover,
+#contact button:hover {
+  background-color: white;
+  color: var(--mainText);
+}
+.home a {
+  color: var(--mainText);
+  font-weight: 600;
+}
+.home a:hover {
+  color: var(--mainColor);
+}
+.home img {
+  width: 100px;
+}
+
+

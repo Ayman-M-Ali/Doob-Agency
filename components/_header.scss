@@ -1,0 +1,62 @@
+@import "./mixins";
+
+#main-page {
+  padding-top: 40px;
+}
+.head {
+  @include flex-between($justify-content: space-between, $align-items: center);
+  margin-bottom: 100px;
+}
+.head ul {
+  @include flex-between($justify-content: space-around, $align-items: center);
+}
+/* Start Nav Links */
+.head ul li,
+#select {
+  @include font($font-size: 18px, $font-weight: 600, $line-height: 0, $letter-spacing: normal);
+  margin-left: 20px;
+  padding: 5px 10px;
+  color: var(--mainText);
+}
+.head ul li a:hover {
+  color: var(--mainColor);
+}
+.head .active {
+  color: var(--mainColor);
+}
+#select {
+  margin-left: 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+#select:hover {
+  color: var(--mainColor);
+}
+#select option {
+  background-color: var(--mainText);
+  color: white;
+}
+#select option:hover {
+  color: var(--mainColor);
+}
+/* End Nav Links */
+nav ul > a:last-child {
+  @include font($font-size: 20px, $font-weight: 600, $line-height: unset, $letter-spacing: normal);
+  padding: 20px 40px;
+  margin-left: 60px;
+  background-color: white;
+  color: var(--mainColor);
+  border-radius: 5px;
+  cursor: pointer;
+}
+.toggle-menu {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  cursor: pointer;
+  font-size: 20px;
+  z-index: -1;
+  opacity: 0;
+}
+

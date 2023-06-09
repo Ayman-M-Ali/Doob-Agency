@@ -1,0 +1,29 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Work Sans', sans-serif;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+h3,
+h4 {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--mainColor);
+}
+h4 {
+  color: var(--mainText)
+}

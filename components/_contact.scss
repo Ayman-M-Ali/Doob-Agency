@@ -1,0 +1,40 @@
+@import "./mixins";
+#contact {
+  padding: 50px 0;
+}
+#contact .container {
+  margin-bottom: 60px;
+}
+form {
+  gap: 20px;
+  display: grid;
+  margin-bottom: 40px;
+}
+form div {
+  @include flex-between($justify-content: space-between, $align-items: center);
+  gap: 20px;
+}
+form input,
+form input::placeholder,
+form textarea {
+  width: 100%;
+  padding: 20px;
+  background: #F4FAFE;
+  outline: none;
+  border: none;
+  @include font($font-size: 14px, $font-weight: 600, $line-height: 0, $letter-spacing: normal);
+  color: var(--mainText)
+}
+form textarea {
+  resize: none;
+}
+form input::placeholder {
+  padding: 0;
+}
+#contact button {
+  display: flex;
+  margin: auto !important;
+  cursor: pointer;
+}
+
+
