@@ -1,4 +1,4 @@
-import { observeElements } from "./intersection"
+import { observeElements } from "./intersection.js"
 
 function show() {
   let projectsHidden = document.getElementById("projects-hidden");
