@@ -1,3 +1,5 @@
+import { observeElements } from "./intersection"
+
 function show() {
   let projectsHidden = document.getElementById("projects-hidden");
   let more = document.querySelector(".show-more");
@@ -38,3 +40,8 @@ arrLeft.addEventListener('click', () => {
   blogHidden.style.transform = "translateX(250%)";
   blogShows.style.transform = "translateX(0)";
 });
+// =======================================
+// Observe InterSection API
+const sectionElements = document.querySelectorAll("section");
+
+observeElements(sectionElements);

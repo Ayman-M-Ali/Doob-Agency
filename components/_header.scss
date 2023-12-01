@@ -1,11 +1,14 @@
 @import "./mixins";
 
 #main-page {
-  padding-top: 40px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: #fff;
+  padding: 20px 0;
 }
 .head {
   @include flex-between($justify-content: space-between, $align-items: center);
-  margin-bottom: 100px;
 }
 .head ul {
   @include flex-between($justify-content: space-around, $align-items: center);
